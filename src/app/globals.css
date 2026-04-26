@@ -55,7 +55,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(36.35% 0.112 255.12);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -126,5 +126,17 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+  .font-adlam {
+    font-family: var(--font-adlam);
+  }
+  .font-robotoSlab {
+    font-family: var(--font-roboto-slab);
   }
 }

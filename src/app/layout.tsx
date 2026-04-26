@@ -1,6 +1,27 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/modules/shared/components/Navbar/Navbar";
+import { Roboto,Roboto_Slab, ADLaM_Display } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto", 
+});
+
+const robotoSlab = Roboto_Slab({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-roboto-slab',
+})
+
+const adlam = ADLaM_Display({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-adlam',
+})
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +46,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${robotoSlab.variable} ${adlam.variable} antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
