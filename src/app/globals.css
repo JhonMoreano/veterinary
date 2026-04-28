@@ -140,3 +140,13 @@
     font-family: var(--font-roboto-slab);
   }
 }
+
+.icons-sidebar{
+  &:hover{
+    background: #D2F0FF;
+    span, svg{
+      color: #083D77;
+    }
+
+  }
+}

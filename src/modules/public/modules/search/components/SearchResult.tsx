@@ -1,5 +1,4 @@
-import { Circle, Eye, MapPin, Search } from 'lucide-react';
-import { Button } from "@/modules/shared/components/ui/button";
+import { Search } from 'lucide-react';
 import { Input } from "@/modules/shared/components/ui/input";
 import Image from 'next/image';
 import Link from 'next/link';
