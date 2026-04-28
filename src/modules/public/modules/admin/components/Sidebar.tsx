@@ -1,4 +1,7 @@
-import { Home, LayoutDashboard, User, LogOut, LogIn, PawPrint, ShieldCheck, Settings } from 'lucide-react';
+import { LayoutDashboard, User,  PawPrint, ShieldCheck } from 'lucide-react';
+import SettingsAccount from './SettingsAccount';
+import LogoutAccount from './Logout';
+import { path } from '../const/super-admin';
 
 const Sidebar = () => {
     // Simulación de estado de sesión
@@ -8,7 +11,7 @@ const Sidebar = () => {
         role: "Admin",
         avatar: "" // URL de imagen si tuvieras
     };
-    const path = "/super-admin"
+   
     return (
         <aside className="flex flex-col w-64 h-screen px-5 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
 
@@ -70,18 +73,10 @@ const Sidebar = () => {
 
                     {/* Opciones de Configuración y Sesión */}
                     <nav className="space-y-1">
-                        <button className="icons-sidebar cursor-pointer flex items-center w-full 
-                        px-3 py-2 text-sm font-medium text-gray-600 transition-colors duration-200 
-                        rounded-lg dark:text-gray-300  dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white group">
-                            <Settings size={18} className="text-gray-400 " />
-                            <span className="mx-3 ">Configuración</span>
-                        </button>
+                        <SettingsAccount></SettingsAccount>
+                        <LogoutAccount></LogoutAccount>
 
-                        <button className="icons-sidebar cursor-pointer flex items-center w-full px-3 
-                        py-2 text-sm font-medium  transition-colors duration-200 rounded-lg  dark:hover:bg-red-900/10 group">
-                            <LogOut size={18} className=" " />
-                            <span className="mx-3 ">Cerrar Sesión</span>
-                        </button>
+                        
                     </nav>
                 </div>
             </div>

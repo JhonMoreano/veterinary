@@ -1,4 +1,6 @@
 
+export  const path = "/super-admin"
+
 export const DASHBOARD_DATA = {
     summaryMetrics: [
       {
