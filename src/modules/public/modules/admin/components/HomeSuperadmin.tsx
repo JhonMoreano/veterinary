@@ -1,4 +1,4 @@
-import { DASHBOARD_DATA } from '@/modules/const/super-admin'
+import { DASHBOARD_DATA } from '@/modules/public/modules/admin/const/super-admin'
 import { MapPin, PieChart } from 'lucide-react'
 
 const HomeSuperadmin = () => {

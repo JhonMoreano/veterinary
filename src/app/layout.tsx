@@ -49,7 +49,7 @@ export default function RootLayout({
         
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${robotoSlab.variable} ${adlam.variable} antialiased`}
       >
-        <Navbar/>
+        {/* <Navbar/> */}
         {children}
       </body>
     </html>

@@ -1,5 +1,5 @@
 "use client"
-import HomeSuperadmin from "@/modules/shared/components/Pages/HomeSuperadmin";
+import HomeSuperadmin from "@/modules/public/modules/admin/components/HomeSuperadmin";
 
 const page = () => {
 
