@@ -1,4 +1,4 @@
-import { LayoutDashboard, User,  PawPrint, ShieldCheck } from 'lucide-react';
+import { LayoutDashboard, User,  PawPrint, ShieldCheck, BookMarked } from 'lucide-react';
 import SettingsAccount from './SettingsAccount';
 import LogoutAccount from './Logout';
 import { path } from '../const/super-admin';
@@ -39,6 +39,12 @@ const Sidebar = () => {
                      dark:hover:text-gray-200 hover:text-gray-700" href={path + "/veterinarias"}>
                         <PawPrint className='' />
                         <span className=" mx-2 text-sm font-medium">Veterinarias</span>
+                    </a>
+                    <a className="icons-sidebar flex items-center px-3 py-2 text-gray-600 transition-colors 
+                    duration-300 transform rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800
+                     dark:hover:text-gray-200 hover:text-gray-700" href={path + "/planes"}>
+                        <BookMarked  className='' />
+                        <span className=" mx-2 text-sm font-medium">Planes</span>
                     </a>
                 </nav>
 
